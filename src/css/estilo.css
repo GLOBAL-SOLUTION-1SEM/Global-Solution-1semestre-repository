@@ -64,8 +64,6 @@ header{
     
 }
 
-
-
 #secao2{
     margin-top: 23%;
     
@@ -91,9 +89,7 @@ header{
     font-size: 22px;
     text-align: center;
 }
-#secao3{
-    
-}
+
 #imgbanner3{
     width: 100%;
     height: 700px;
@@ -116,8 +112,60 @@ header{
     text-align: center;
     max-width: 40%;
     margin-top: 50px;
+    
 }
 
+#secao4{
+margin-top: 230px;
+border-bottom: solid;
+border-color:var(--color5);
+border-width: 10px;
+}
+#grid2{
+    padding-inline: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+#imgbanner4{
+    height: 80%;
+    border-style: solid;
+    border-color: var(--color5);
+    border-width: 5px;
+    
+}
+#textogrid2{
+    font-size: 25px;
+    font-family: cursive;
+    color: var(--color5);
+    text-align: center;
+
+}
+#caixagrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-top: 20px;
+    
+    
+}
+#secao5{
+    border-right: solid;
+    
+}
+#secao6{
+    margin-left: 50px;
+}
+.caixadetextogrid{
+    font-size: 25px;
+    font-family: cursive;
+    color: var(--color5);
+    text-align: center;
+    max-width: 89%;
+    height: 600px;
+    
+    
+}
 /* FOOTER */
 footer{
     display: flex;
