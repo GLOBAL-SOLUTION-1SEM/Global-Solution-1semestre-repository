@@ -67,11 +67,30 @@ header{
 
 
 #secao2{
-    margin-top: 25%;
+    margin-top: 23%;
     
 }
-
-
+#grid{
+    margin: 50px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+#imgbanner2{
+    max-width: 70%;
+    order: 1;
+    border-style: solid;
+    border-color: var(--color5);
+    border-radius: 10px;
+}
+#textogrid{
+    order: 2;
+    font-family: cursive;
+    color: var(--color5);
+    font-size: 22px;
+    text-align: center;
+}
 
 
 /* FOOTER */
