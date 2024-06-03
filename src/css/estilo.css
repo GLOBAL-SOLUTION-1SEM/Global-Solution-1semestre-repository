@@ -68,12 +68,12 @@ body{
 
 .logo h2:nth-child(2){
     color: #03a9f4;
-    animation: animate 4s ease-in-out infinite;
+    animation: animate-logo 4s ease-in-out infinite;
     top: -37px;
 }
 
 /* ANIMAÇÃO LOGO */
-@keyframes animate{
+@keyframes animate-logo{
     0%, 100%{
         clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);     
     }
