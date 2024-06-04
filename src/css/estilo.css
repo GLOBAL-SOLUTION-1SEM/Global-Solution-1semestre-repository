@@ -19,7 +19,7 @@ body{
     background-image: linear-gradient(#407cfc,#b8ccfc);
 }
 
-/* HEADER */
+/*--------------------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
 
 .header{
     position: fixed;
@@ -90,9 +90,10 @@ body{
 .navbar a{
     color: #fff;
     font-size: 18px;
+    align-items: center;
     text-decoration: none;
     margin-left: 35px;
-    display: inline-block;
+    display: flex;
     transition: all .3s;
 }
 
@@ -111,14 +112,16 @@ body{
 .btn-nav{
     background: transparent;
     outline: none;
-    border: 5px solid white;
-    width: 130px;
-    height: 30px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 110px;
+    height: 37px;
     margin-left: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    font-weight: 600;
     z-index: 0;
     cursor: pointer;
     overflow: hidden;
@@ -169,7 +172,12 @@ body{
     transform: translateY(0) scale(2);
 }
 
-/* RESPONSIVIDADE DA NAVBAR*/
+.btn-nav:active{
+    transform: scale(0.98); 
+}
+
+/*--------------------------------------------------------------------------------RESPONSIVIDADE DA NAVBAR----------------------------------------------------------------------------*/
+
 @media (max-width: 1135px){
     .header{
         padding: 1.25rem 4%;
@@ -233,26 +241,21 @@ body{
 
 /* sections */
 
-#secao1{
-    margin-top: 75px;
-}
-
 #bannerdiv{
     
     position: relative;
-    
+
     text-align: center;
     font-family: cursive;
     font-size: 24px;
     color: var(--color4);
     max-width: 90%;
-    padding-top: 60px;
+    padding-top: 200px;
     padding-left: 75px;
-    
 }
 #imgbanner{
     width: 100%;
-    height: 70%;
+    height: 90%;
     position: absolute;
     filter: brightness(50%);
 }
@@ -314,6 +317,7 @@ border-bottom: solid;
 border-color:var(--color5);
 border-width: 10px;
 }
+
 #grid2{
     padding-inline: 100px;
     display: grid;
@@ -358,7 +362,126 @@ border-width: 10px;
     height: 600px;
     
 }
-/* FOOTER ANIMADO*/
+
+/* ---------------------------------------------------------------------------------SECTION CARDS------------------------------------------------------------------------------------ */
+
+.section-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 100px;
+    transition: all .3s ease-in-out;
+}
+
+.card .img-holder{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.card:nth-child(1) .img-holder{
+    background: url(/src/img/imgcard1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(2) .img-holder{
+    background: url(/src/img/imgcard2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card h2, .card p{
+    margin-bottom: 15px;
+}
+
+.card p{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    transition-delay: .1s;
+}
+
+.card a{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    transition-delay: .1s;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #3586ff;
+}
+
+.card-content{
+    height: 35px;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+.card-content p{
+    text-align: justify;
+}
+
+.card:hover .img-holder{
+    transform: scale(0.9);
+    margin-top: -120px;
+}
+
+.card:hover .card-content{
+    height: 340px;
+    overflow: visible;
+}
+
+.card:hover p, .card:hover a{
+    opacity: 1;
+}
+
+.card-content a{
+    transition: all .3s;
+    transition-delay: .1s;
+}
+
+.btn-card:hover{
+    transform: translateY(-5px) scale(1.05);
+    transition: all .3s;
+}
+
+.btn-card:active{
+    transform: scale(0.95);
+}
+
+/* RESPONSIVIDADE SECTION CARDS */
+@media (max-width: 658px){
+    .card:hover .card-content{
+        height: 380px;
+        overflow: visible;
+    }
+}
+
+/*------------------------------------------------------------------------------FOOTER ANIMADO----------------------------------------------------------------------------------------*/
+
 footer{
     position: relative;
     width: 100%;
