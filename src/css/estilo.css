@@ -351,9 +351,108 @@ body{
     background-color: #fff;
 }
 
+#section1{
+    position: relative;
+}
 
+.content-slider{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
 
+.content-slider h3{
+    margin-top: -680px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 75%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 10px ;
+    border: 2px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+}
 
+.texto-slider {
+    margin-top: -600px;
+    font-size: 25px;
+    padding: 40px;
+    gap: 40px;
+    text-align: center;
+    height: 50%;
+    font-weight: 600;
+    justify-content: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+}
+
+.texto1{
+    padding: 20px;
+    padding-top: 70px;
+    background: transparent;
+    border-radius: 10px ;
+    border: 2px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+}
+
+.texto2{
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px ;
+    border: 2px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+}
+
+@media (max-width: 1500px){
+    .texto-slider {
+        margin-top: -600px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px){
+    .texto-slider {
+        margin-top: -580px;
+        font-size: 18px;
+        padding: 40px;
+        gap: 40px;
+        height: 50%;
+    }
+}
+
+@media (max-width: 850px){
+    .content-slider h3{
+        margin-top: -680px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        width: 85%;
+
+    }
+    .texto-slider {
+        margin-top: -640px;
+        font-size: 15px;
+        padding: 40px;
+        gap: 15px;
+        text-align: justify;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto1{
+        padding: 20px;  
+    }
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
