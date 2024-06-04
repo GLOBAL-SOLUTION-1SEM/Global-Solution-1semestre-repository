@@ -83,6 +83,10 @@ body{
     }
 }
 
+.navbar{
+    display: flex;
+}
+
 .navbar a{
     color: #fff;
     font-size: 18px;
@@ -104,14 +108,85 @@ body{
     display: none;
 }
 
+.btn-nav{
+    background: transparent;
+    outline: none;
+    border: 5px solid white;
+    width: 130px;
+    height: 30px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-nav span{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.btn-nav div{
+    position: absolute;
+    left: calc((var(--n) - 1) * 25%);
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(100%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);;
+    z-index: -1;
+}
+
+.btn-nav div:nth-child(2){
+    --n: 1;
+}
+
+.btn-nav div:nth-child(3){
+    --n: 2;
+}
+
+.btn-nav div:nth-child(4){
+    --n: 3;
+}
+
+.btn-nav div:nth-child(5){
+    --n: 4;
+}
+
+.btn-nav:hover span{
+    color: black;
+}
+
+.btn-nav:hover div{
+    transform: translateY(0) scale(2);
+}
+
 /* RESPONSIVIDADE DA NAVBAR*/
-@media (max-width: 992px){
+@media (max-width: 1135px){
     .header{
         padding: 1.25rem 4%;
     }
 }
 
-@media (max-width: 858px){
+@media (max-width: 1005px){
+    .navbar a{
+        margin-left: 15px;
+    }
+
+    .btn-nav{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 898px){
     #menu-icon{
         display: block;
     }
@@ -139,7 +214,7 @@ body{
         top: 7.9%;
         left: 0;
         width: 100%;
-        height: 295px;
+        height: 375px;
         background: rgba(255, 255, 255, .1);
         border-bottom: 2px solid rgba(255, 255, 255, .2);
         backdrop-filter: blur(10px);
@@ -150,15 +225,18 @@ body{
     .nav-bg.active{
         display: block;
     }
+
+    .btn-nav{
+        margin-left: 0;
+    }
 }
 
 /* sections */
 
 #secao1{
     margin-top: 75px;
-    
-    
 }
+
 #bannerdiv{
     
     position: relative;
