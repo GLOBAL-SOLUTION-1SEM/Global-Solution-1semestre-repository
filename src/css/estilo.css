@@ -518,6 +518,7 @@ body{
     object-fit: cover;
     margin-left: -4rem;
     border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1)  3px 3px 20px 10px;
   }
   
   .card__content {

@@ -13,11 +13,11 @@
         <form action="">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" id="login" placeholder="Username (admin)" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="senha" placeholder="Password (admin)" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
@@ -26,12 +26,14 @@
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" onclick="logar()">Login</button>
 
             <div class="register-link">
                 <p>Don't have an account? <a href="#">Register</a></p>
             </div>
         </form>
     </div>
+
+    <script src="./src/js/login.js"></script>
 </body>
 </html>
