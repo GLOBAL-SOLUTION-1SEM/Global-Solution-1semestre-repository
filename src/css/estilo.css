@@ -16,7 +16,7 @@
 }
 
 body{
-    background-image: linear-gradient(#407cfc,#b8ccfc);
+    background-image: linear-gradient(#3586ff, #407cfc,#b8ccfc, #3586ff, #407cfc,#b8ccfc);
 }
 
 /*--------------------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
@@ -667,9 +667,7 @@ body{
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 #secao4{
-border-bottom: solid;
-border-color:var(--color5);
-border-width: 10px;
+    border-bottom: 5px solid var(--color5) ;
 }
 
 #grid2{
@@ -688,9 +686,16 @@ border-width: 10px;
     border-color: var(--color5);
     border-width: 5px;
     object-fit: contain;
+    border-radius: 1.5rem;
 }
+
 #textogrid2{
     font-size: 25px;
+    background-color: #fff;
+    padding: 3rem 2rem 3rem 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in-out;
     color: var(--color5);
     align-items: center;
     justify-content: center;
@@ -715,28 +720,30 @@ border-width: 10px;
     
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1296px){
     #grid2{
         display: flex;
         flex-direction: column;
     }
     
     #imgbanner4{
-        width: 60%;
+        width: 48%;
     }
 
     #textogrid2{
         max-width: 75%;
+        font-size: 20px;
     }
 }
 
-@media (max-width: 728px){
+@media (max-width: 730px){
     #imgbanner4{
         width: 85%;
     }
 
     #textogrid2{
         text-align: center;
+        font-size: 20px;
     }
 }
 /* ---------------------------------------------------------------------------------SECTION CARDS------------------------------------------------------------------------------------ */
