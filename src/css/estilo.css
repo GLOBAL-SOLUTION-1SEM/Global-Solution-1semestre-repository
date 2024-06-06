@@ -224,7 +224,7 @@ body{
         top: 7.9%;
         left: 0;
         width: 100%;
-        height: 375px;
+        height: 415px;
         background: rgba(255, 255, 255, .1);
         border-bottom: 2px solid rgba(255, 255, 255, .2);
         backdrop-filter: blur(10px);
@@ -462,8 +462,8 @@ body{
     }
 
     .texto-slider {
-        margin-top: -645px;
-        font-size: 14px;
+        margin-top: -639px;
+        font-size: 13.5px;
         padding: 40px;
         gap: 12px;
         height: 50%;
@@ -938,8 +938,7 @@ footer .social-icon li a:hover{
     transform: translateY(-10px);
 }
 
-footer .menu li { 
-    
+footer .menu li a{  
     font-size: 1.2rem;
     color: #fff;
     margin: 0 10px;
