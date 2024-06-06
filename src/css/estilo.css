@@ -180,13 +180,13 @@ body{
 
 /*--------------------------------------------------------------------------------RESPONSIVIDADE DA NAVBAR----------------------------------------------------------------------------*/
 
-@media (max-width: 1135px){
+@media (max-width: 1255px){
     .header{
-        padding: 1.25rem 4%;
+        padding: 1.25rem 2%;
     }
 }
 
-@media (max-width: 1005px){
+@media (max-width: 1100px){
     .navbar a{
         margin-left: 15px;
     }
@@ -196,7 +196,7 @@ body{
     }
 }
 
-@media (max-width: 898px){
+@media (max-width: 988px){
     #menu-icon{
         display: block;
     }
