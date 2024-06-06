@@ -4,7 +4,7 @@ function logar(){
     var senha = document.querySelector("#senha").value;
     if(login == "admin" && senha == "admin"){
         alert("Login Efetuado com Sucesso! Volte à Página Principal")
-        location.href = "login.html"
+        location.href = "index.html"
     }
     else{
         alert("Login ou Senha Incorretos.")
